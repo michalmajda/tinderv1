@@ -1,0 +1,16 @@
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+}
+
+
+
+.tinder-logo{
+    object-fit: contain;
+    height: 50px;
+    margin-left: 20px;
+ 
+}
+
