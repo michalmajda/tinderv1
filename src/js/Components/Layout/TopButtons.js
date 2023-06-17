@@ -1,11 +1,11 @@
 import React from 'react';
-import "./TopButtons.css";
+import "./../../../styles/TopButtons.css";
 import IconButton from '@mui/material/IconButton';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
-import LogoTinder from "./Tinder-Logo.png"
+import LogoTinder from "./../../../img/Tinder-Logo.png"
 
-function TopButtons(){
+const TopButtons = () => {
     return(
         <div className='header'>
             <img
