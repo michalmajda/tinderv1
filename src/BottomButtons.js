@@ -8,11 +8,9 @@ import "./BottomButtons.css";
 
 function BottomButtons(){
     return(
-        <div className="bottom-buttons">
-            
+        <div className="footer">
             <IconButton aria-label="reload" size="large">           
                 <ReplaySharpIcon fontSize="large" className='reload-icon'/>
- 
             </IconButton>
             <IconButton aria-label="dislike" size="large">
                 <ClearRoundedIcon fontSize="large" className='dislike-icon' />

@@ -1,37 +1,34 @@
 import "./Cards.css";
-import React, { useState, useEffect } from "react";
+import React from "react";
 import TinderCard from "react-tinder-card";
 import { People } from "./People";
 
 
 function Cards() {
     
-
-    const swiped = (direction, nameToDelete) => {
-        console.log("removing: " + nameToDelete);
+    const onSwipe = (direction) => {
+        console.log("Przesunales w " + ((direction==='right') ? 'prawo' : 'lewo'));
     };
 
-    const outOfFrame = (name) => {
-        console.log(name + "left the screen !");
+    const onCardLeftScreen = (myIdentifier) => {
+        console.log(myIdentifier + " oceniona");
     };
 
     return (
-        <div className="tinderCards">
-            <div className="tinderCards__cardContainer">
+        <div className="cards"> 
                 {People.map((person) =>(
                     <TinderCard 
                         className="swipe"
                         key={person.name}
                         preventSwipe={["up","down"]}
-                        onSwipe={(dir) => swiped(dir, person.name)}
-                        onCardLeftScreen={() => outOfFrame(person.name)}
+                        onSwipe={(dir) => onSwipe(dir)}
+                        onCardLeftScreen={() => onCardLeftScreen(person.name)}
                     >
-                        <div style={{ backgroundImage: `url(${person.image})` }} className="card">
-                            <h3>{person.name},{person.age}</h3>
+                        <div style={{ backgroundImage: `url(${person.image})` }} className="tinder-card">
+                            <h1>{person.name}, {person.age}</h1>
                         </div>
                     </TinderCard>
-                ))}
-            </div>        
+                ))}          
         </div>
     );
 }
