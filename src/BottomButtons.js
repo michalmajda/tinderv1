@@ -10,19 +10,19 @@ function BottomButtons(){
     return(
         <div className="footer">
             <IconButton aria-label="reload" size="large">           
-                <ReplaySharpIcon fontSize="large" className='reload-icon'/>
+                <ReplaySharpIcon fontSize="large" style={{color: "rgba(209, 212, 21, 0.952)"}}/>
             </IconButton>
             <IconButton aria-label="dislike" size="large">
-                <ClearRoundedIcon fontSize="large" className='dislike-icon' />
+                <ClearRoundedIcon fontSize="large" style={{color: "rgb(240, 78, 78)"}} />
             </IconButton>
             <IconButton aria-label="superlike" size="large">
-                <GradeRoundedIcon fontSize="large" className='superlike-icon' />
+                <GradeRoundedIcon fontSize="large" style={{color: "rgb(8, 191, 252)"}} />
             </IconButton>
             <IconButton aria-label="like" size="large">
-                <FavoriteSharpIcon fontSize="large" className='like-icon' />
+                <FavoriteSharpIcon fontSize="large" style={{color: "rgb(111, 221, 173)"}} />
             </IconButton>
             <IconButton aria-label="boost" size="large">
-                <ElectricBoltRoundedIcon fontSize="large" className='boost-icon' />
+                <ElectricBoltRoundedIcon fontSize="large" style={{color: "rgb(145, 93, 209)"}} />
             </IconButton>
         </div>
     );

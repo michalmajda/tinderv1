@@ -16,8 +16,8 @@ function Cards() {
         <div className="cards"> 
                 {People.map((person) =>(
                     <TinderCard 
-                        className="swipe"
                         key={person.name}
+                        className="swipe"
                         preventSwipe={["up","down"]}
                         onSwipe={(dir) => onSwipe(dir)}
                         onCardLeftScreen={() => onCardLeftScreen(person.name)}
