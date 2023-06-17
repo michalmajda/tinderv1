@@ -5,11 +5,9 @@ import { People } from "./People";
 
 
 function Cards() {
-    
     const onSwipe = (direction) => {
         console.log("Przesunales w " + ((direction==='right') ? 'prawo' : 'lewo'));
     };
-
     const onCardLeftScreen = (myIdentifier) => {
         console.log(myIdentifier + " oceniona");
     };

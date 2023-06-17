@@ -3,13 +3,14 @@ import "./TopButtons.css";
 import IconButton from '@mui/material/IconButton';
 import NotificationsIcon from '@mui/icons-material/Notifications';
 import MenuRoundedIcon from '@mui/icons-material/MenuRounded';
+import LogoTinder from "./Tinder-Logo.png"
 
 function TopButtons(){
     return(
         <div className='header'>
             <img
                     className='tinder-logo'
-                    src="https://logos-world.net/wp-content/uploads/2020/09/Tinder-Logo.png"
+                    src={LogoTinder}
                     alt="tinder-logo"
             />
             <div className='head-nav'>
